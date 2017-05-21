@@ -1,3 +1,7 @@
 = Hello Echo
 
 This is a sample web service project.
+
+|====
+| Build Status| image:https://travis-ci.org/andreassiegel/hello-echo.svg?branch=master["Build Status", link="https://travis-ci.org/andreassiegel/hello-echo, role=center"]
+|====
