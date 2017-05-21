@@ -4,3 +4,6 @@ jdk:
 
 install:
   - mvn install -q -U -DskipTests
+
+after_success:
+  - mvn jacoco:report coveralls:report -DrepoToken=$COVERALLS_REPO_TOKEN

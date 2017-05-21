@@ -2,6 +2,5 @@
 
 This is a sample web service project.
 
-|====
-| Build Status| image:https://travis-ci.org/andreassiegel/hello-echo.svg?branch=master["Build Status", link="https://travis-ci.org/andreassiegel/hello-echo, role=center"]
-|====
+image:https://travis-ci.org/andreassiegel/hello-echo.svg?branch=master["Build Status", link="https://travis-ci.org/andreassiegel/hello-echo"]
+image:https://coveralls.io/repos/github/andreassiegel/hello-echo/badge.svg?branch=master["Test Coverage", link="https://coveralls.io/github/andreassiegel/hello-echo?branch=master"]
