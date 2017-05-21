@@ -1,6 +1,49 @@
 = Hello Echo
 
-This is a sample web service project.
+This is a sample web service project with a single endpoint that echos the incoming request.
 
 image:https://travis-ci.org/andreassiegel/hello-echo.svg?branch=master["Build Status", link="https://travis-ci.org/andreassiegel/hello-echo"]
 image:https://coveralls.io/repos/github/andreassiegel/hello-echo/badge.svg?branch=master["Test Coverage", link="https://coveralls.io/github/andreassiegel/hello-echo?branch=master"]
+
+== POST /**
+
+The service provides a single endpoint that sends back data of arbitrary incoming POST requests with JSON payload:
+
+=== Request
+
+.Request Path
+----
+POST /hello/world
+----
+
+.Request Body
+[source, json]
+----
+{
+    "message": "Hello World"
+}
+----
+
+=== Response
+
+.Example Response Body
+[source, json]
+----
+{
+  "path": "/hello/world",
+  "headers": {
+    "content-length": "29",
+    "host": "localhost:8080",
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "accept-encoding": "gzip, deflate",
+    "accept": "*/*",
+    "user-agent": "PostmanRuntime/3.0.11-hotfix.2"
+  },
+  "body": {
+    "message": "Hello World"
+  },
+  "datetime": "2017-05-21 17:12:40"
+}
+----
