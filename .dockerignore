@@ -30,3 +30,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+.editorconfig
+.gitignore
+.travis.yml
+
+# IntelliJ
+.idea
+*.iml
+out
+gen
